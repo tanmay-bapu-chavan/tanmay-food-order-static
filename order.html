@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Order Food Page</title>
+</head>
+
+<body>
+
+    <main class="main-content">
+        <!-- Navbar Section Starts Here -->
+        <div class="footer-img2">
+            <section class=" navbar">
+                <div class="container">
+
+
+                    <div class="menu text-right">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="btn-color">Home</a>
+                            </li>
+                            <li>
+                                <a href="categories.html" class="btn-color">Categories</a>
+                            </li>
+                            <li>
+                                <a href="foods.html" class="btn-color">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#bottom" class="btn-color">Contact Us</a>
+                            </li>
+                        </ul>
+
+                        <div>
+
+                            <div class="food-search2 text-center">
+                                <h2 class="text-white">Your Food is just one step away....</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+            </section>
+        </div>
+
+        <!-- Navbar Section Ends Here -->
+
+        <section class="food-search">
+            <div class="container">
+                <form action="" method="POST" class="order">
+                    <fieldset>
+                        <div class="food-order-img">
+                            <img src="images/food/Panner Pizza.jpg" alt="Paneer Pizza" class="img-responsive img-curve">
+                        </div>
+                        <div class="float-container">
+                            <div class="text-center">
+                                <h3>Paneer Pizza</h3>
+                                <input type="hidden" name="food" value="<?php echo $food_title; ?>">
+                                <p class="food-price">₹199</p>
+                                <input type="hidden" name="price" value="<?php echo $food_price; ?>">
+                                <div class="order-label">Quantity</div>
+                                <input type="number" name="qty" class="input-responsive-qty" value="1" required>
+                            </div>
+                            <h3>Delivery Details</h3>
+                            <br>
+                            <div class="order-label">Full Name</div>
+                            <input type="text" name="full-name" placeholder="Your name" class="input-responsive"
+                                required>
+                            <div class="order-label">Phone Number</div>
+                            <input type="tel" name="contact" placeholder="E.g. 9181xxxxxx" class="input-responsive"
+                                required>
+                            <div class="order-label">Email</div>
+                            <input type="email" name="email" placeholder="E.g. abc@gmail.com" class="input-responsive"
+                                required>
+                            <div class="order-label">Address</div>
+                            <textarea name="address" rows="4" placeholder="E.g. street_name, city, pin-code"
+                                class="input-responsive" required></textarea>
+                            <input type="submit" name="submit" value="Confirm Order" class="btn btn-order">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <br><br><br><br><br><br><br>
+
+    </main>
+    <footer class="footer">
+        <!-- social Section Starts Here -->
+<div id="bottom" class="footer-img img-responsive">
+    <br><br><br>
+    <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="#" ><img src="images/facebook.png" style="width: 50px; height: 50px";/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/instagram.png" style="width: 50px; height: 50px";/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/twitter.png" style="width: 50px; height: 50px";/></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- social Section Ends Here -->
+
+    <!-- footer Section Starts Here -->
+    <section class="footer">
+        <div class="container text-center">
+            <p class="text-white">Contact Us - abc@gmail.com</p>
+            <br>
+            <p class = "text-white">All rights reserved.</p>
+        </div>
+    </section>
+</div>
+<!-- footer Section Ends Here -->
+</footer>
+</body>
+
+</html>
